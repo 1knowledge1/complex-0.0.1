@@ -35,7 +35,8 @@ struct complex_t {
 	istream & read(istream & stream) {
 		char op1, op2, op3;
 		float real, imag;
-		if (stream >> op1 && op1 == '(' && stream >> real && stream >> op2 && op2 == ',' && stream >> imag && stream >> op3 && op3 == ')') {
+		if (stream >> op1 && op1 == '(' && stream >> real && stream >> op2 && op2 == ',' 
+		    && stream >> imag && stream >> op3 && op3 == ')') {
 			this->real = real;
 			this->imag = imag;
 		}
